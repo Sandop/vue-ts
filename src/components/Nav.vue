@@ -25,5 +25,12 @@
     ul.el-menu-demo.el-menu--horizontal.el-menu {
         display: flex;
         justify-content: center;
+
+        li a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
     }
+    
 </style>
