@@ -19,17 +19,17 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
 export default class UploadImg extends Vue {
-	@Prop() private msg!: string;
+	@Prop() public msg!: string;
 
 	// data
-	private dialogImageUrl: string = '';
-	private	dialogVisible: boolean = false;
+	public dialogImageUrl: string = '';
+	public	dialogVisible: boolean = false;
 
 	// methods
-	private handleRemove(file: any, fileList: any): void {
+	public handleRemove(file: any, fileList: any): void {
         // console.log(file, fileList);
 	}
-	private handlePictureCardPreview(file: any) {
+	public handlePictureCardPreview(file: any) {
         this.dialogImageUrl = file.url;
         this.dialogVisible = true;
     }

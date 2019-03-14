@@ -13,7 +13,7 @@
     import { Component, Prop, Vue } from 'vue-property-decorator';
     @Component
     export default class Select extends Vue {
-        private options: any[] = [{
+        public options: any[] = [{
             value: '选项1',
             label: '身份证正面',
             }, {
@@ -27,6 +27,6 @@
             label: '手持合同',
             },
         ];
-        private selectValue: string = '';
+        public selectValue: string = '';
     }
 </script>

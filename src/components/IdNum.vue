@@ -9,7 +9,7 @@
 
     @Component
     export default class IdNum extends Vue {
-        private idNum: string = '';
+        public idNum: string = '';
     }
 </script>
 

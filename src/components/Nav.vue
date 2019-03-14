@@ -15,8 +15,8 @@
     export default class Nav extends Vue {
 
         // data
-        private activeIndex: string = '1';
-        private activeIndex2: string = '1';
+        public activeIndex: string = '1';
+        public activeIndex2: string = '1';
     }
 
 </script>
